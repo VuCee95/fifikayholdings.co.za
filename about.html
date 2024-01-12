@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html "><img src="./images/LOGO.png"alt=""></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <div class="heading">
+      <h1>About Us</h1>
+      <p>We were founded in [year] on the [day] of [month] by [Name and surname], a young woman with a passion for entreprenuership and technoolgy. She saw the gap in the market for a company that could offer comprehansive and affordable online and digital solutions  for small and medium enterprises. We are based in North West, but we serve clients across South Africa and beyond. We have a team of experienced and able professionals who are dedicated to delivering high-quality serivce.</p>
+    </div>
+
+    <div class="services-container">
+      <div class="row">
+
+        <div class="about-services">
+          <i class="fa-solid fa-book"></i> 
+          <h2>MISSION</h2>
+          <p>"Our mission is to empower entrepreneurs, freelancers, and small businesses by providing comprehensive and affordable online and digital solutions, certifications, and business registrations. We strive to be a trusted partner, guiding our clients through the complexities of establishing and maintaining their online presence, securing transactions, and ensuring compliance with legal requirements. Through innovative and reliable services, we aim to contribute to the growth and success of our clients, fostering a thriving community of businesses in South Africa and beyond. We are more than service providers, we are dedicated partners, assisting our clients in establishing and enhancing their online presence, securing transactions, and ensuring compliance with legal requirements. Our geographical roots in North West extend to serve clients across South Africa and beyond. With a dynamic team of experienced professionals, Fifikay Holdings takes pride in delivering high-quality services tailored to the unique needs of our diverse clientele. Our mission is to be a catalyst for growth, supporting businesses in navigating the dynamic digital landscape."</p>
+        </div>
+
+        <div class="about-services">
+          <i class="fa-solid fa-globe"></i>
+          <h2>VISSION</h2>
+          <p>"We envision a future where every entrepreneur, freelancer, and small business owner not only survives but thrives in the digital realm. Our vision extends globally, aiming to be the premier choice for individuals and enterprises seeking reliable, innovative, and client-centric online and digital services. Founded on core values of integrity, excellence, and customer satisfaction, we aspire to be recognized as leaders in providing cutting-edge solutions, unmatched certifications, and seamless business registrations. Our commitment to evolution is unwavering. we adapt to emerging technologies and market demands, anticipating shifts and actively shaping the future. Fifikay Holdings global presence signifies a transformative force in the industry, with a network that reaches beyond borders. Our vision encapsulates not only anticipating the future but actively contributing to its positive evolution and to be the leading one-stop provider of online and digital solutions, certifications, and business registration services in Africa, propelling the success of countless entrepreneurs and fueling the continent's digital revolution." </p>
+        </div>
+      </div>
+  
+
+       <!-------------Footer------------------->
+       <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa commodi explicabo quod ipsam molestiae magni dolores <br> delectus voluptas quam sed accusantium dolor cumque eligendi porro consequature.</p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-x"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made by Vu'Cee <i class="fa fa-heart-o"></i>  </p>
+       </section>
+  
+      
+</body>
+
+
+<!---------Java for Functions------->
+<script>
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 0) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+        }
+  </script>
+</html>

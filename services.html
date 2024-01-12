@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html "><img src="./images/LOGO.png"alt=""></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <div class="heading">
+        <h1>Our Services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quos obcaecati praesentium nulla rem unde tempora quis repudiandae minus.</p>
+      </div>
+
+      <div class="services-container">
+        <div class="row">
+          <div class="sub-about-services">
+            <i class="fa-solid fa-business-time"></i>
+            <h2>Company Registrations</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit odio quos, exercitationem perspiciatis </p>
+          </div>
+
+          <div class="sub-about-services">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <h2>SARS, e-Filling and Taxes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit odio quos, exercitationem perspiciatis </p>
+          </div>
+
+          <div class="sub-about-services">
+            <i class="fa-solid fa-database"></i>
+            <h2>CSD Services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit odio quos, exercitationem perspiciatis </p>
+          </div>
+
+          <div class="sub-about-services">
+            <i class="fa-solid fa-users"></i>
+            <h2>UIF, COIDA</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit odio quos, exercitationem perspiciatis </p>
+          </div>
+
+          <div class="sub-about-services">
+            <i class="fa-solid fa-magnifying-glass"></i> 
+            <h2>Other services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit odio quos, exercitationem perspiciatis </p>
+          </div>
+
+          <div class="sub-about-services">
+            <i class="fa-solid fa-pizza-slice"></i>
+            <h2>Fifikay Eats Menu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit odio quos, exercitationem perspiciatis </p>
+          </div>
+        </div>
+        <a href="#" class="read-more">Get Services</a>
+      </div>
+
+       <!-------------Footer------------------->
+       <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa commodi explicabo quod ipsam molestiae magni dolores <br> delectus voluptas quam sed accusantium dolor cumque eligendi porro consequature.</p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-x"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made by Vu'Cee <i class="fa fa-heart-o"></i>  </p>
+       </section>
+  
+      
+</body>
+
+
+<!---------Java for Functions------->
+<script>
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 0) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+        }
+  </script>
+</html>
